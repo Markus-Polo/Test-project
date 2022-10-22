@@ -18,6 +18,7 @@
   "author": "FLS",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "gulp-cli": "^2.3.0"
   },
   "devDependencies": {
