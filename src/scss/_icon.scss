@@ -1,0 +1,61 @@
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: icomoon !important;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: never;
+}
+.icon-vector:before {
+  content: '\e90d';
+}
+.icon-bed:before {
+  content: '\e900';
+}
+.icon-calendar:before {
+  content: '\e901';
+}
+.icon-chair:before {
+  content: '\e902';
+}
+.icon-commode:before {
+  content: '\e903';
+}
+.icon-facebook:before {
+  content: '\e904';
+}
+.icon-instagram:before {
+  content: '\e905';
+}
+.icon-kitchen:before {
+  content: '\e906';
+}
+.icon-map-pin:before {
+  content: '\e907';
+}
+.icon-phone:before {
+  content: '\e908';
+}
+.icon-shopping-cart:before {
+  content: '\e909';
+}
+.icon-sofa:before {
+  content: '\e90a';
+}
+.icon-telegram:before {
+  content: '\e90b';
+}
+.icon-wardrobe:before {
+  content: '\e90c';
+}
+.icon-menu3:before {
+  content: '\e9bf';
+}
