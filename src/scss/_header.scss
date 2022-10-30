@@ -57,37 +57,56 @@
 .icon-vector {
   font-size: 6px;
 }
-.dropdown,
-.dropdown--tel {
+.dropdown-nav,
+.dropdown-tel {
   display: inline-block;
   position: relative;
 }
-.dropdown__content,
-.dropdown__content--tel {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  min-width: 150px;
-  padding-left: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 10px, 10px, 15px, black;
-  text-align: start;
-}
-.dropdown--nav {
+.dropdown-nav {
   @media screen and (min-width: 992px) {
     display: none;
   }
 }
-.dropdown__linc:hover {
-  background-color: #838383;
-}
-.show {
-  display: block;
-}
-.dropdown__button {
-  padding-bottom: 5px;
+.dropdown-button {
   border: none;
   background-color: white;
+  color: black;
+}
+.dropdown-nav__content,
+.dropdown-tel__content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding: 8px;
+  background: white;
+}
+.dropdown-nav__content:before,
+.dropdown-tel__content:before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: auto;
+  background: #44c697;
+}
+.dropdown-tel__content {
+  right: 0;
+  min-width: 150px;
+}
+.dropdown-nav__content {
+  min-width: 200px;
+}
+.dropdown-show {
+  display: flex;
+}
+.dropdown__linc {
+  display: block;
+  left: 0;
+  padding: 15px 8px;
+  text-align: start;
+}
+.dropdown__linc:hover {
+  text-decoration: underline solid #44c697 3px;
+  text-underline-offset: 3px;
 }
 .header-nav__list {
   display: flex;
@@ -108,6 +127,12 @@
   text-decoration: underline solid #44c697 3px;
   text-underline-offset: 6px;
 }
+.vector-show {
+  display: none;
+  @media screen and (min-width: 1950px) {
+    display: inline-block;
+  }
+}
 .header-cap-lower {
   @media screen and (min-width: 1200px) {
     display: none;
@@ -119,13 +144,18 @@
     display: block;
   }
 }
-.logo-linc {
+.logo-linc-min {
   display: inline-block;
-  max-width: 176px;
-  @media screen and (min-width: 576px) {
-    max-width: 200px;
-  }
+  max-width: 80px;
   @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+.logo-linc {
+  display: none;
+  max-width: 176px;
+  @media screen and (min-width: 992px) {
+    display: inline-block;
     max-width: 250px;
   }
   @media screen and (min-width: 1950px) {

@@ -13,6 +13,12 @@
 .pl-0 {
   padding-left: 0 !important;
 }
+.pd-0 {
+  padding: 0;
+}
+.pd-5 {
+  padding: 5px;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -52,7 +58,7 @@ ol {
     font-size: 18px;
   }
 }
-.pain-text-bold {
+.plain-text-bold {
   color: #1e2e36;
   font-size: 14px;
   font-weight: 700;
