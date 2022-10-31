@@ -1,115 +1,109 @@
 header
   .container.header-cap
-    .row
-      .col-12
-        .header-socials.pain-text
-          .header-socials-wrap
-            .dropdown-nav
-              button.dropdown-button.toggle-class-js(data-target='.dropdown-nav__content' data-class-to-toggle='dropdown-show')
-                span.icon-menu3.pr-5
-              .dropdown-nav__content
-                ul
-                  li
-                    a.dropdown__linc.plain-text-bold(href='') Головна
-                  li
-                    a.dropdown__linc.plain-text-bold(href='') АкцІї
-                  li
-                    a.dropdown__linc.plain-text-bold(href='') Доставка та оплата
-                  li
-                  a.dropdown__linc.plain-text-bold(href='') Про нас
-                  li
-                  a.dropdown__linc.plain-text-bold(href='') Контакти
-            span.plain-text-bold.d-none Ми в соціальних мережах:
-            ul.socials
-              li.socials__item
-                a.socials__link(href='')
-                  span.icon-telegram
-              li.socials__item
-                a.socials__link(href='')
-                  span.icon-facebook
-              li.socials__item
-                a.socials__link(href='')
-                  span.icon-instagram
-          div
-            a.pl-50(href='tel: +380991112233') #[img(src='./img/phone.svg' alt='')] (099)11 12 233
-            .dropdown-tel
-              button.dropdown-button.pd-5.toggle-class-js(data-target='.dropdown-tel__content' data-class-to-toggle='dropdown-show')
-                span.icon-vector.pl-5
-              .dropdown-tel__content
-                .left-line
-                ul
-                  li
-                    a.dropdown__linc(href='tel: +380960000000') (096) 00 00 000
-                  li
-                    a.dropdown__linc(href='tel: +380967777777') (095) 77 77 777
-                  li
-                    a.dropdown__linc(href='tel: +380969999999') (096) 99 99 999
-    .row
-      nav.header-nav.col-12
-        ul.plain-text-bold.header-nav__list
-          li.header-nav__item.d-none
-            a.header-nav__link(href='') Головна
-          li.header-nav__item.d-none
-            a.header-nav__link(href='') АкцІї
-          li.header-nav__item.d-none
-            a.header-nav__link(href='') Доставка та оплата
-          li.header-nav__item.d-none
-            a.header-nav__link(href='') Про нас
-          li.header-nav__item.d-none
-            a.header-nav__link(href='') Контакти
+    .header-socials.plain-text
+      .header-socials-wrap
+        .dropdown-nav
+          button.dropdown-button.toggle-class-js(data-target='.dropdown-nav__content' data-class-to-toggle='dropdown-show')
+            span.icon-menu.pr-5
+          .dropdown-nav__content
+            ul
+              li
+                a.dropdown__link.plain-text.fw-700(href='') Головна
+              li
+                a.dropdown__link.plain-text.fw-700(href='') АкцІї
+              li
+                a.dropdown__link.plain-text.fw-700(href='') Доставка та оплата
+              li
+                a.dropdown__link.plain-text.fw-700(href='') Про нас
+              li
+                a.dropdown__link.plain-text.fw-700(href='') Контакти
+        span.plain-text.fw-700.d-none Ми в соціальних мережах:
+        ul.socials
+          li.socials__item
+            a.socials__link(href='')
+              span.icon-telegram
+          li.socials__item
+            a.socials__link(href='')
+              span.icon-facebook
+          li.socials__item
+            a.socials__link(href='')
+              span.icon-instagram
+      .head-tel-wraper
+        a.header-tel(href='tel: +380991112233') #[span.icon-mobile]  (099)11 12 233
+        .dropdown-tel
+          button.dropdown-button.pd-5.toggle-class-js(data-target='.dropdown-tel__content' data-class-to-toggle='dropdown-show')
+            span.icon-vector.pl-5
+          .dropdown-tel__content
+            ul
+              li
+                a.dropdown__link(href='tel: +380960000000') (096) 00 00 000
+              li
+                a.dropdown__link(href='tel: +380967777777') (095) 77 77 777
+              li
+                a.dropdown__link(href='tel: +380969999999') (096) 99 99 999
+    nav.header-nav
+      ul.plain-text.fw-700.header-nav__list
+        li.header-nav__item.d-none
+          a.header-nav__link(href='') Головна
+        li.header-nav__item.d-none
+          a.header-nav__link(href='') АкцІї
+        li.header-nav__item.d-none
+          a.header-nav__link(href='') Доставка та оплата
+        li.header-nav__item.d-none
+          a.header-nav__link(href='') Про нас
+        li.header-nav__item.d-none
+          a.header-nav__link(href='') Контакти
   hr
   .container.header-cap-lower
     .row.d-flex
       .col-6
-        a.logo-linc-min(href='')
-          img.max-width-100(src='./img/logo-min.png' alt='')
-        a.logo-linc(href='')
-          img.max-width-100(src='./img/logo.svg' alt='')
+        a.logo-link-min(href='')
+          img(src='./img/logo-min.png' alt='')
+        a.logo-link(href='')
+          img(src='./img/logo.svg' alt='')
       .col-6
-        .plain-text-bold.d-flex.justify-end
+        .plain-text.fw-700.d-flex.justify-content-end
           a.shopping-cart(href='')
             span.icon-shopping-cart.shopping-cart__icon
             span.shopping-cart__text Кошик
           .header-button-wrap
             button.main-button Замовити дзвінок
-    .row
-      .col-12
-        nav.header-nav
-          ul.plain-text-bold.header-nav__list
-            li.header-nav__item.d-none.pl-0
-              a.header-nav__link(href='') Дивани
-            li.header-nav__item.d-none
-              a.header-nav__link(href='') ліжка
-            li.header-nav__item.d-none
-              a.header-nav__link(href='') Крісла
-            li.header-nav__item.d-none
-              a.header-nav__link(href='') комоди
-            li.header-nav__item.d-none
-              a.header-nav__link(href='') шафи
-            li.header-nav__item.d-none
-              a.header-nav__link(href='') Кухня
+    nav.header-nav.d-none
+      ul.plain-text.fw-700.header-nav__list
+        li.header-nav__item.pl-0
+          a.header-nav__link(href='') Дивани
+        li.header-nav__item
+          a.header-nav__link(href='') ліжка
+        li.header-nav__item
+          a.header-nav__link(href='') Крісла
+        li.header-nav__item
+          a.header-nav__link(href='') комоди
+        li.header-nav__item
+          a.header-nav__link(href='') шафи
+        li.header-nav__item
+          a.header-nav__link(href='') Кухня
   .container.header-cap-lower--xxxl
     .row.d-flex
-      .col-xl-4.xxxl-col-5
-        nav.header-nav
-          ul.plain-text-bold.header-nav__list
-            li.header-nav__item.d-none.pl-0
+      .col-xl-4.col-xxxl-5
+        nav.header-nav.d-none
+          ul.plain-text.fw-700.header-nav__list
+            li.header-nav__item.pl-0
               a.header-nav__link(href='') Дивани #[span.icon-vector.vector-show]
-            li.header-nav__item.d-none
+            li.header-nav__item
               a.header-nav__link(href='') Ліжка #[span.icon-vector.vector-show]
-            li.header-nav__item.d-none
+            li.header-nav__item
               a.header-nav__link(href='') Крісла #[span.icon-vector.vector-show]
-            li.header-nav__item.d-none
+            li.header-nav__item
               a.header-nav__link(href='') Комоди #[span.icon-vector.vector-show]
-            li.header-nav__item.d-none
+            li.header-nav__item
               a.header-nav__link(href='') Шафи #[span.icon-vector.vector-show]
-            li.header-nav__item.d-none
+            li.header-nav__item
               a.header-nav__link(href='') Кухня #[span.icon-vector.vector-show]
       .col-xl-4.xxxl-col-3.d-flex.justify-center
-        a.logo-linc(href='')
+        a.logo-link(href='')
           img.max-width-100(src='./img/logo.svg' alt='')
       .col-xl-4
-        .plain-text-bold.d-flex.justify-end
+        .plain-text.fw-700.d-flex.justify-content-end
           a.shopping-cart(href='')
             span.icon-shopping-cart.shopping-cart__icon
             span.shopping-cart__text Кошик
