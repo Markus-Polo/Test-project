@@ -1,6 +1,6 @@
 .d-none {
   display: none;
-  @media screen and (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     display: block;
   }
 }
@@ -13,16 +13,16 @@
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  @media screen and (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     padding: 14px 22px;
   }
-  @media screen and (min-width: 1950px) {
+  @include media-breakpoint-up(xxxl) {
     padding: 16px 48px;
     font-size: 18px;
   }
 }
 .header-cap {
-  @media screen and (min-width: 1200px) {
+  @include media-breakpoint-up(xl) {
     display: flex;
     justify-content: space-between;
   }
@@ -63,7 +63,7 @@
 .header-tel {
   display: inline-flex;
   align-items: center;
-  @media screen and (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     padding-left: 50px;
   }
 }
@@ -76,7 +76,7 @@
   position: relative;
 }
 .dropdown-nav {
-  @media screen and (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     display: none;
   }
 }
@@ -124,7 +124,7 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  @media screen and (min-width: 1200px) {
+  @include media-breakpoint-up(xl) {
     justify-content: flex-start;
   }
 }
@@ -141,36 +141,36 @@
 }
 .vector-show {
   display: none;
-  @media screen and (min-width: 1950px) {
+  @include media-breakpoint-up(xxxl) {
     display: inline-block;
   }
 }
 .header-cap-lower {
-  @media screen and (min-width: 1200px) {
+  @include media-breakpoint-up(xl) {
     display: none;
   }
 }
 .header-cap-lower--xxxl {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @include media-breakpoint-up(xl) {
     display: block;
   }
 }
 .logo-link-min {
   display: inline-block;
   max-width: 80px;
-  @media screen and (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     display: none;
   }
 }
 .logo-link {
   display: none;
   max-width: 176px;
-  @media screen and (min-width: 992px) {
+  @include media-breakpoint-up(lg) {
     display: inline-block;
     max-width: 250px;
   }
-  @media screen and (min-width: 1950px) {
+  @include media-breakpoint-up(xxxl) {
     max-width: 360px;
   }
 }

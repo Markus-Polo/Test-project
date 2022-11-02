@@ -1,14 +1,14 @@
 section
-  .container.p-0
-    .row
-      .col-12
-        picture
-          source(media='(min-width: 992px)' srcet='./img/hero-img-1x.webp 1x, ./img/hero-img-2x.webp 2x'
-              type='image/webp')
-          source(media='(min-width: 992px)' srcet='./img/hero-img-1x.jpg 1x, ./img/hero-img-2x.jpg 2x'
-            type='image/jpeg')
-          source(srcet='./img/hero-img-1x-sm.webp 1x, ./img/hero-img-2x-sm.webp 2x'
+  .container
+    picture
+      source(media='(min-width: 992px)'
+            srcet='./img/hero-img-1x.webp 1x, ./img/hero-img-2x.webp 2x'
             type='image/webp')
-          source(srcet='./img/hero-img-1x-sm.jpg 1x, ./img/hero-img-2x-sm.jpg 2x'
+      source(media='(min-width: 992px)'
+            srcet='./img/hero-img-1x.jpg 1x, ./img/hero-img-2x.jpg 2x'
             type='image/jpeg')
-          img.img-hero(src='./img/hero-img-1x.jpg' alt='' loading='lazy')
+      source(srcet='./img/hero-img-1x-sm.webp 1x, ./img/hero-img-2x-sm.webp 2x'
+            type='image/webp')
+      source(srcet='./img/hero-img-1x-sm.jpg 1x, ./img/hero-img-2x-sm.jpg 2x'
+            type='image/jpeg')
+      img.img-hero(src='./img/hero-img-1x.jpg' alt='' loading='lazy')

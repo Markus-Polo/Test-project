@@ -1,38 +1,23 @@
-a {
-  text-decoration: none;
+$paddings: 0, 5;
+$paddings-r: 5;
+$paddings-l: 0, 5, 50;
+
+@each $pd in $paddings {
+  .p-#{$pd} {
+    padding: #{$pd}px;
+  }
 }
-body {
-  font-family: ProximaNova, sans-serif;
+@each $pl in $paddings-l {
+  .pl-#{$pl} {
+    padding-left: #{$pl}px;
+  }
 }
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-img {
-  max-width: 100%;
-}
-.d-flex {
-  display: flex;
-}
-.pl-50 {
-  padding-left: 50px;
-}
-.pl-5 {
-  padding-left: 5px;
-}
+
 .pr-5 {
   padding-right: 5px;
 }
-.pl-0 {
-  padding-left: 0 !important;
-}
-.p-0 {
-  padding: 0;
-}
-.pd-5 {
-  padding: 5px;
+.d-flex {
+  display: flex;
 }
 .justify-content-between {
   justify-content: space-between;
