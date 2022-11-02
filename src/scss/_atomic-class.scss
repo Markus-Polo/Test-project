@@ -1,13 +1,9 @@
-$paddings: 0, 5;
-$paddings-r: 5;
-$paddings-l: 0, 5, 50;
-
-@each $pd in $paddings {
+@each $pd in (0, 5) {
   .p-#{$pd} {
     padding: #{$pd}px;
   }
 }
-@each $pl in $paddings-l {
+@each $pl in (0, 5, 50) {
   .pl-#{$pl} {
     padding-left: #{$pl}px;
   }
@@ -42,9 +38,6 @@ $paddings-l: 0, 5, 50;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
-  @media screen and (min-width: 1950px) {
-    font-size: 18px;
-  }
 }
 .fw-700 {
   font-weight: 700;

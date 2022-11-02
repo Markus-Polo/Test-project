@@ -21,13 +21,13 @@ header
           span.plain-text.fw-700.d-none Ми в соціальних мережах:
           ul.socials
             li.socials__item
-              a.socials__link(href='')
+              a.socials__link(aria-label='telegram' href='')
                 span.icon-telegram
             li.socials__item
-              a.socials__link(href='')
+              a.socials__link(aria-label='facebook' href='')
                 span.icon-facebook
             li.socials__item
-              a.socials__link(href='')
+              a.socials__link(aria-label='instagram' href='')
                 span.icon-instagram
         .head-tel-wraper
           a.header-tel(href='tel: +380991112233')
@@ -59,15 +59,15 @@ header
   hr
   .header-cap-lower
     .container
-      .row.d-flex
+      .row
         .col-6
-          a.logo-link-min(href='')
+          a.logo-link-min(aria-label='logo' href='')
             img(src='./img/logo-min.svg' alt='')
-          a.logo-link(href='')
+          a.logo-link(aria-label='logo' href='')
             img(src='./img/logo.svg' alt='')
         .col-6
           .plain-text.fw-700.d-flex.justify-content-end
-            a.shopping-cart(href='')
+            a.shopping-cart(aria-label='cart' href='')
               span.icon-shopping-cart.shopping-cart__icon
               span.shopping-cart__text Кошик
             .header-button-wrap
@@ -86,38 +86,32 @@ header
             a.header-nav__link(href='') шафи
           li.header-nav__item
             a.header-nav__link(href='') Кухня
-  .container.header-cap-lower-xxxl
-    .row.d-flex
-      .col-xl-4.col-xxxl-5
+  .container.header-cap-lower-xl
+    .row
+      .col-xl-4
         nav.header-nav.d-none
           ul.plain-text.fw-700.header-nav__list
             li.header-nav__item.pl-0
               a.header-nav__link(href='')
                 | Дивани
-                span.icon-vector.vector-show.pl-5
             li.header-nav__item
               a.header-nav__link(href='')
                 | Ліжка
-                span.icon-vector.vector-show.pl-5
             li.header-nav__item
               a.header-nav__link(href='')
                 | Крісла
-                span.icon-vector.vector-show.pl-5
             li.header-nav__item
               a.header-nav__link(href='')
                 | Комоди
-                span.icon-vector.vector-show.pl-5
             li.header-nav__item
               a.header-nav__link(href='')
                 | Шафи
-                span.icon-vector.vector-show.pl-5
             li.header-nav__item
               a.header-nav__link(href='')
                 | Кухня
-                span.icon-vector.vector-show.pl-5
-      .col-xl-4.xxxl-col-3.d-flex.justify-center
+      .col-xl-4.d-flex.justify-center
         a.logo-link(href='')
-          img.max-width-100(src='./img/logo.svg' alt='')
+          img(src='./img/logo.svg' alt='')
       .col-xl-4
         .plain-text.fw-700.d-flex.justify-content-end
           a.shopping-cart(href='')
