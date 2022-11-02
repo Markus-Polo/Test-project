@@ -30,7 +30,7 @@
 .icon-menu {
   font-size: 36px;
 }
-.header-socials {
+.header-contacts {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -110,15 +110,16 @@
 .dropdown-show {
   display: flex;
 }
-.dropdown__link {
+.dropdown-tel__link,
+.dropdown-nav__link {
   display: block;
   left: 0;
   padding: 15px 8px;
   text-align: start;
-}
-.dropdown__link:hover {
-  text-decoration: underline solid #44c697 3px;
-  text-underline-offset: 3px;
+  &:hover {
+    text-decoration: underline solid #44c697 3px;
+    text-underline-offset: 3px;
+  }
 }
 .header-nav__list {
   display: flex;
@@ -150,7 +151,7 @@
     display: none;
   }
 }
-.header-cap-lower--xxxl {
+.header-cap-lower-xxxl {
   display: none;
   @include media-breakpoint-up(xl) {
     display: block;

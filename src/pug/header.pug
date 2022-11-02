@@ -1,60 +1,61 @@
 header
-  .container.header-cap
-    .header-socials.plain-text
-      .header-socials-wrap
-        .dropdown-nav
-          button.dropdown-button.toggle-class-js(data-target='.dropdown-nav__content' data-class-to-toggle='dropdown-show')
-            span.icon-menu.pr-5
-          .dropdown-nav__content
-            ul
-              li
-                a.dropdown__link.plain-text.fw-700(href='') Головна
-              li
-                a.dropdown__link.plain-text.fw-700(href='') АкцІї
-              li
-                a.dropdown__link.plain-text.fw-700(href='') Доставка та оплата
-              li
-                a.dropdown__link.plain-text.fw-700(href='') Про нас
-              li
-                a.dropdown__link.plain-text.fw-700(href='') Контакти
-        span.plain-text.fw-700.d-none Ми в соціальних мережах:
-        ul.socials
-          li.socials__item
-            a.socials__link(href='')
-              span.icon-telegram
-          li.socials__item
-            a.socials__link(href='')
-              span.icon-facebook
-          li.socials__item
-            a.socials__link(href='')
-              span.icon-instagram
-      .head-tel-wraper
-        a.header-tel(href='tel: +380991112233')
-          span.icon-mobile
-          (099)11 12 233
-        .dropdown-tel
-          button.dropdown-button.p-5.toggle-class-js(data-target='.dropdown-tel__content' data-class-to-toggle='dropdown-show')
-            span.icon-vector.pl-5
-          .dropdown-tel__content
-            ul
-              li
-                a.dropdown__link(href='tel: +380960000000') (096) 00 00 000
-              li
-                a.dropdown__link(href='tel: +380967777777') (095) 77 77 777
-              li
-                a.dropdown__link(href='tel: +380969999999') (096) 99 99 999
-    nav.header-nav
-      ul.plain-text.fw-700.header-nav__list
-        li.header-nav__item.d-none
-          a.header-nav__link(href='') Головна
-        li.header-nav__item.d-none
-          a.header-nav__link(href='') АкцІї
-        li.header-nav__item.d-none
-          a.header-nav__link(href='') Доставка та оплата
-        li.header-nav__item.d-none
-          a.header-nav__link(href='') Про нас
-        li.header-nav__item.d-none
-          a.header-nav__link(href='') Контакти
+  .container
+    .header-cap
+      .header-contacts.plain-text
+        .header-socials-wrap
+          .dropdown-nav
+            button.dropdown-button.toggle-class-js(data-target='.dropdown-nav__content' data-class-to-toggle='dropdown-show')
+              span.icon-menu.pr-5
+            .dropdown-nav__content
+              ul
+                li
+                  a.dropdown-nav__link.plain-text.fw-700(href='') Головна
+                li
+                  a.dropdown-nav__link.plain-text.fw-700(href='') АкцІї
+                li
+                  a.dropdown-nav__link.plain-text.fw-700(href='') Доставка та оплата
+                li
+                  a.dropdown-nav__link.plain-text.fw-700(href='') Про нас
+                li
+                  a.dropdown-nav__link.plain-text.fw-700(href='') Контакти
+          span.plain-text.fw-700.d-none Ми в соціальних мережах:
+          ul.socials
+            li.socials__item
+              a.socials__link(href='')
+                span.icon-telegram
+            li.socials__item
+              a.socials__link(href='')
+                span.icon-facebook
+            li.socials__item
+              a.socials__link(href='')
+                span.icon-instagram
+        .head-tel-wraper
+          a.header-tel(href='tel: +380991112233')
+            span.icon-mobile
+            | (099)11 12 233
+          .dropdown-tel
+            button.dropdown-button.p-5.toggle-class-js(data-target='.dropdown-tel__content' data-class-to-toggle='dropdown-show')
+              span.icon-vector.pl-5
+            .dropdown-tel__content
+              ul
+                li
+                  a.dropdown-tel__link(href='tel: +380960000000') (096) 00 00 000
+                li
+                  a.dropdown-tel__link(href='tel: +380967777777') (095) 77 77 777
+                li
+                  a.dropdown-tel__link(href='tel: +380969999999') (096) 99 99 999
+      nav.header-nav.d-none
+        ul.plain-text.fw-700.header-nav__list
+          li.header-nav__item
+            a.header-nav__link(href='') Головна
+          li.header-nav__item
+            a.header-nav__link(href='') АкцІї
+          li.header-nav__item
+            a.header-nav__link(href='') Доставка та оплата
+          li.header-nav__item
+            a.header-nav__link(href='') Про нас
+          li.header-nav__item
+            a.header-nav__link(href='') Контакти
   hr
   .header-cap-lower
     .container
@@ -85,7 +86,7 @@ header
             a.header-nav__link(href='') шафи
           li.header-nav__item
             a.header-nav__link(href='') Кухня
-  .container.header-cap-lower--xxxl
+  .container.header-cap-lower-xxxl
     .row.d-flex
       .col-xl-4.col-xxxl-5
         nav.header-nav.d-none
