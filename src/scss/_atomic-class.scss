@@ -9,8 +9,26 @@
   }
 }
 
+.pt-8 {
+  padding-top: 8px;
+}
+.pt-18 {
+  padding-top: 18px;
+}
+.pr-0 {
+  padding-right: 0;
+}
 .pr-5 {
   padding-right: 5px;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.m-0 {
+  margin: 0;
 }
 .d-flex {
   display: flex;
@@ -26,9 +44,6 @@
 }
 .d-block {
   display: block;
-}
-.max-width-100 {
-  max-width: 100%;
 }
 .text-uppercase {
   text-transform: uppercase;

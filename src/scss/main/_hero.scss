@@ -1,3 +1,130 @@
 .img-hero {
   padding-top: 20px;
 }
+.hero-slider,
+.hero-slider__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-slider-wrap {
+  display: none;
+  position: absolute;
+  max-width: 210px;
+  margin-left: 50px;
+  padding-top: 20px;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 290px;
+  }
+  @include media-breakpoint-up(xxl) {
+    max-width: 460px;
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: auto;
+    background: #44c697;
+    @include media-breakpoint-up(xxl) {
+      width: 18px;
+    }
+  }
+}
+.hero-slider {
+  padding: 20px 15px;
+  background-color: white;
+  @include media-breakpoint-up(lg) {
+    padding: 20px 15px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 90px 74px;
+  }
+}
+.title-1 {
+  font-size: 26px;
+  font-weight: 700;
+  @include media-breakpoint-up(lg) {
+    font-size: 36px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 64px;
+  }
+}
+.hero-slider__text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    padding-top: 18px;
+    font-size: 22px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 36px;
+  }
+}
+.main-button--slider {
+  padding: 8px 18px;
+  @include media-breakpoint-up(lg) {
+    padding: 12px 28px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 14px 44px;
+  }
+}
+.hero-slider__switch {
+  padding-top: 8px;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    padding-top: 20px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-top: 50px;
+  }
+}
+.slider-namber-aktive {
+  font-size: 16px;
+  font-weight: 700;
+  @include media-breakpoint-up(lg) {
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 36px;
+  }
+}
+.slider-namber {
+  font-size: 12px;
+  font-weight: 700;
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 24px;
+  }
+}
+.slider-button-l,
+.slider-button-r {
+  justify-items: center;
+  padding: 8px 11px 6px 13px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  @include media-breakpoint-up(lg) {
+    padding: 11px 14px 9px 16px;
+  }
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+.slider-button-l {
+  margin-right: 8px;
+  padding: 8px 13px 6px 11px;
+  @include media-breakpoint-up(lg) {
+    padding: 11px 14px 9px 16px;
+  }
+}
