@@ -1,0 +1,44 @@
+@each $pd in (0, 5) {
+  .p-#{$pd} {
+    padding: #{$pd}px;
+  }
+}
+@each $pl in (0, 5, 50) {
+  .pl-#{$pl} {
+    padding-left: #{$pl}px;
+  }
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.justify-center {
+  justify-content: center;
+}
+.d-block {
+  display: block;
+}
+.max-width-100 {
+  max-width: 100%;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.plain-text {
+  color: #1e2e36;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.fw-700 {
+  font-weight: 700;
+}
