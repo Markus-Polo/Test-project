@@ -13,8 +13,11 @@
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  @include media-breakpoint-up(md) {
-    padding: 14px 22px;
+  @include media-breakpoint-up(lg) {
+    padding: 12px 28px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 14px 44px;
   }
 }
 .header-cap {
@@ -30,7 +33,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
   text-align: center;
 }
 .header-socials-wrap {
@@ -126,8 +128,10 @@
   }
 }
 .header-nav__item {
-  padding-top: 32px;
   padding-left: 15px;
+  &:first-child {
+    padding-left: 0;
+  }
 }
 .header-nav__link {
   text-transform: uppercase;
@@ -137,12 +141,14 @@
   text-underline-offset: 6px;
 }
 .header-cap-lower {
+  padding-top: 15px;
   @include media-breakpoint-up(xl) {
     display: none;
   }
 }
 .header-cap-lower-xl {
   display: none;
+  padding-top: 15px;
   @include media-breakpoint-up(xl) {
     display: block;
   }

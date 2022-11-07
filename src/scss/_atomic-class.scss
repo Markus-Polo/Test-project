@@ -3,14 +3,29 @@
     padding: #{$pd}px;
   }
 }
+@each $pt in (8, 18) {
+  .pt-#{$pt} {
+    padding-top: #{$pt}px;
+  }
+}
+@each $pr in (0, 5, 15) {
+  .pr-#{$pr} {
+    padding-right: #{$pr}px;
+  }
+}
+@each $pb in (10) {
+  .pb-#{$pb} {
+    padding-bottom: #{$pb}px;
+  }
+}
 @each $pl in (0, 5, 50) {
   .pl-#{$pl} {
     padding-left: #{$pl}px;
   }
 }
 
-.pr-5 {
-  padding-right: 5px;
+.m-0 {
+  margin: 0;
 }
 .d-flex {
   display: flex;
@@ -26,9 +41,6 @@
 }
 .d-block {
   display: block;
-}
-.max-width-100 {
-  max-width: 100%;
 }
 .text-uppercase {
   text-transform: uppercase;

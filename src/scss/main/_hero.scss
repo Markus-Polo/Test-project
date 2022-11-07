@@ -1,3 +1,130 @@
 .img-hero {
+  display: none;
   padding-top: 20px;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
+.hero-slider,
+.hero-slider__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-slider-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    max-width: 210px;
+    margin-left: 50px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 290px;
+  }
+  @include media-breakpoint-up(xxl) {
+    max-width: 460px;
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: auto;
+    background: #44c697;
+    @include media-breakpoint-up(xxl) {
+      width: 18px;
+    }
+  }
+}
+.hero-slider {
+  padding: 20px 15px;
+  background-color: white;
+  box-shadow: 15px 15px 15px #00000016;
+  @include media-breakpoint-up(xxl) {
+    padding: 90px 74px;
+  }
+}
+.title-1 {
+  font-size: 42px;
+  font-weight: 700;
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 36px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 64px;
+  }
+}
+.hero-slider__text {
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 18px;
+    font-size: 22px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 36px;
+  }
+}
+.hero-slider__switch {
+  padding-top: 8px;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    padding-top: 20px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-top: 50px;
+  }
+}
+.slider-namber-aktive {
+  font-size: 16px;
+  font-weight: 700;
+  @include media-breakpoint-up(lg) {
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 36px;
+  }
+}
+.slider-namber {
+  font-size: 12px;
+  font-weight: 700;
+  @include media-breakpoint-up(lg) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 24px;
+  }
+}
+.hero-slider__button-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 8px;
+}
+.slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  &:first-child {
+    margin-right: 8px;
+  }
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 }

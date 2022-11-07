@@ -1,5 +1,21 @@
 section
   .container
+    .hero-slider-wrap
+      .hero-slider
+        h1.title-1 Новинка!
+        p.hero-slider__text
+          span.fw-700.pb-10 Ліжко Ornella
+          | Це новий рівень комфортного сну
+        button.main-button Детальніше
+        .hero-slider__switch
+          div
+            span.slider-namber-aktive 01
+            span.slider-namber / 04
+          .hero-slider__button-wrap
+            button.slider-button
+              span.icon-arrow-left
+            button.slider-button
+              span.icon-arrow-right
     picture
       source(media='(min-width: 992px)'
             srcet='./img/hero-img-1x.webp 1x, ./img/hero-img-2x.webp 2x'
