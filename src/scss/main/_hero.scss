@@ -1,5 +1,9 @@
 .img-hero {
+  display: none;
   padding-top: 20px;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
 }
 .hero-slider,
 .hero-slider__text {
@@ -8,13 +12,13 @@
   align-items: center;
 }
 .hero-slider-wrap {
-  display: none;
-  position: absolute;
-  max-width: 210px;
-  margin-left: 50px;
+  display: flex;
+  justify-content: center;
   padding-top: 20px;
   @include media-breakpoint-up(md) {
-    display: flex;
+    position: absolute;
+    max-width: 210px;
+    margin-left: 50px;
   }
   @include media-breakpoint-up(lg) {
     max-width: 290px;
@@ -36,16 +40,17 @@
 .hero-slider {
   padding: 20px 15px;
   background-color: white;
-  @include media-breakpoint-up(lg) {
-    padding: 20px 15px;
-  }
+  box-shadow: 15px 15px 15px #00000016;
   @include media-breakpoint-up(xxl) {
     padding: 90px 74px;
   }
 }
 .title-1 {
-  font-size: 26px;
+  font-size: 42px;
   font-weight: 700;
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+  }
   @include media-breakpoint-up(lg) {
     font-size: 36px;
   }
@@ -54,9 +59,12 @@
   }
 }
 .hero-slider__text {
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.2;
   text-align: center;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
   @include media-breakpoint-up(lg) {
     padding-top: 18px;
     font-size: 22px;
@@ -65,15 +73,6 @@
     padding-top: 50px;
     padding-bottom: 30px;
     font-size: 36px;
-  }
-}
-.main-button--slider {
-  padding: 8px 18px;
-  @include media-breakpoint-up(lg) {
-    padding: 12px 28px;
-  }
-  @include media-breakpoint-up(xxl) {
-    padding: 14px 44px;
   }
 }
 .hero-slider__switch {
@@ -106,25 +105,26 @@
     font-size: 24px;
   }
 }
-.slider-button-l,
-.slider-button-r {
-  justify-items: center;
-  padding: 8px 11px 6px 13px;
+.hero-slider__button-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 8px;
+}
+.slider-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   border: 1px solid black;
   border-radius: 50%;
   background-color: white;
-  @include media-breakpoint-up(lg) {
-    padding: 11px 14px 9px 16px;
+  &:first-child {
+    margin-right: 8px;
   }
   &:hover {
     background-color: black;
     color: white;
-  }
-}
-.slider-button-l {
-  margin-right: 8px;
-  padding: 8px 13px 6px 11px;
-  @include media-breakpoint-up(lg) {
-    padding: 11px 14px 9px 16px;
   }
 }

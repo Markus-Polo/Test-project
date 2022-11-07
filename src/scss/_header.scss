@@ -13,8 +13,11 @@
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  @include media-breakpoint-up(md) {
-    padding: 14px 22px;
+  @include media-breakpoint-up(lg) {
+    padding: 12px 28px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 14px 44px;
   }
 }
 .header-cap {
@@ -126,6 +129,9 @@
 }
 .header-nav__item {
   padding-left: 15px;
+  &:first-child {
+    padding-left: 0;
+  }
 }
 .header-nav__link {
   text-transform: uppercase;
