@@ -1,0 +1,73 @@
+.vantages {
+  padding-bottom: 100px;
+}
+.vantages__list {
+  position: relative;
+  justify-content: center;
+  @include media-breakpoint-up(xl) {
+    justify-content: space-between;
+  }
+}
+.vantages__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: -122px;
+  margin-bottom: 0;
+  padding-top: 46px;
+  padding-right: 40px;
+  padding-left: 40px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline solid #44c697 3px;
+  text-underline-offset: 10px;
+  @include media-breakpoint-up(xxl) {
+    font-size: 36px;
+  }
+}
+.vantages__item {
+  max-width: 586px;
+  @include media-breakpoint-up(xl) {
+    max-width: 434px;
+  }
+  @include media-breakpoint-up(xxl) {
+    max-width: 586px;
+  }
+}
+.plain-text--vantages {
+  padding-top: 12px;
+  color: white !important;
+  text-decoration: none;
+}
+.vantages-button {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  // border: 1px solid black;
+  border-radius: 50%;
+  background-color: #fff0;
+  color: black;
+}
+.vantages__item--show {
+  display: none;
+  @include media-breakpoint-up(xl) {
+    display: block;
+  }
+}
+.vantages-button-l {
+  left: 3px;
+  font-size: 36px;
+  @include media-breakpoint-up(md) {
+    font-size: 60px;
+  }
+}
+.vantages-button-r {
+  right: 3px;
+  font-size: 36px;
+  @include media-breakpoint-up(md) {
+    font-size: 60px;
+  }
+}
