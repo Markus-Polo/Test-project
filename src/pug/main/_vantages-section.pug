@@ -1,23 +1,27 @@
 section
   .container
     .vantages
-      h2.title-2.pt-100.pb-50 Наші переваги
-      ul.row.vantages__list
-        li.vantages__item.col-xl-4
-          button.vantages-button.vantages-button-l
+      .title-holder
+        h2.title-2 Наші переваги
+      .vantages__list-holder
+        .vantages-button-holder.l-0
+          button.vantages-button
             span.icon-arrow-left
-          button.vantages-button.vantages-button-r
-            span.icon-arrow-right
-          img(src='./img/vantages-img-1.jpg' alt='')
-          p.vantages__content Меблі преміум класу
-        li.vantages__item.col-xl-4.vantages__item--show
-          img(src='./img/vantages-img-2.jpg' alt='')
-          p.vantages__content.pt-0
-            span Надійність
-            span.plain-text.plain-text--vantages За 14 років на ринку меблів для дому ми стали надійними
-              |  партнерами на ринку Вінницької області та України
-        li.vantages__item.col-xl-4.vantages__item--show
+        .vantages-button-holder.r-0
           button.vantages-button
             span.icon-arrow-right
-          img(src='./img/vantages-img-3.jpg' alt='')
-          p.vantages__content Безкоштовна доставка
+        ul.row.vantages__list
+          li.vantages__item.col-lg-4
+            img(src='./img/vantages-img-1.jpg' alt='')
+            .vantages__content
+              h3.title-3 Меблі преміум класу
+          li.vantages__item.col-lg-4.vantages__item--show
+            img(src='./img/vantages-img-2.jpg' alt='')
+            .vantages__content
+              h3.title-3 Надійність
+              span.plain-text.plain-text--vantages За 14 років на ринку меблів для дому ми стали надійними
+                |  партнерами на ринку Вінницької області та України
+          li.vantages__item.col-lg-4.vantages__item--show
+            img(src='./img/vantages-img-3.jpg' alt='')
+            .vantages__content
+              h3.title-3 Безкоштовна доставка
