@@ -1,0 +1,91 @@
+.categories {
+  padding-bottom: 80px;
+}
+.categories__item {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+.categories__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 74px;
+  @include media-breakpoint-up(xl) {
+    font-size: 98px;
+  }
+  &:hover {
+    color: $main-color;
+  }
+  &:hover .categories__text {
+    color: black;
+    text-decoration: underline solid $main-color 3px;
+    text-underline-offset: 10px;
+  }
+}
+.categories__text {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 24px;
+  }
+}
+.bed__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.bed__link {
+  position: relative;
+  &:hover .bed__content {
+    background-color: $main-color;
+    color: white;
+  }
+}
+.attention-wrap {
+  display: flex;
+  position: absolute;
+  left: 0;
+  flex-direction: column;
+  padding-top: 15px;
+}
+.attention-text {
+  display: inline;
+  padding: 5px 15px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+}
+.bed__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.bed__name,
+.bed__cost {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 24px;
+  }
+}
+.categories-button {
+  display: flex;
+  justify-content: center;
+}
