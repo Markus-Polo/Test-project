@@ -31,7 +31,7 @@
     display: block;
     width: 8px;
     height: auto;
-    background: #44c697;
+    background: $main-color;
     @include media-breakpoint-up(xxl) {
       width: 18px;
     }

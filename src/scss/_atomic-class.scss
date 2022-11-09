@@ -3,7 +3,7 @@
     padding: #{$pd}px;
   }
 }
-@each $pt in (0, 5, 8, 18, 100) {
+@each $pt in (0, 5, 8, 15, 18, 100) {
   .pt-#{$pt} {
     padding-top: #{$pt}px;
   }
@@ -51,8 +51,10 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.w-color {
+  color: white;
+}
 .plain-text {
-  color: #1e2e36;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
@@ -85,15 +87,16 @@
     content: '';
     position: absolute;
     z-index: -1;
-    width: 12px;
+    width: 18px;
     height: 100%;
-    background-color: #44c697;
+    background-color: $main-color;
   }
 }
 .title-3 {
   color: white;
   font-size: 22px;
-  text-decoration: underline solid #44c697 3px;
+  font-weight: 700;
+  text-decoration: underline solid $main-color 3px;
   text-underline-offset: 10px;
   @include media-breakpoint-up(md) {
     font-size: 28px;
