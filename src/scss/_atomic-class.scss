@@ -3,7 +3,7 @@
     padding: #{$pd}px;
   }
 }
-@each $pt in (8, 18) {
+@each $pt in (0, 5, 8, 15, 18, 100) {
   .pt-#{$pt} {
     padding-top: #{$pt}px;
   }
@@ -13,7 +13,7 @@
     padding-right: #{$pr}px;
   }
 }
-@each $pb in (10) {
+@each $pb in (10, 50) {
   .pb-#{$pb} {
     padding-bottom: #{$pb}px;
   }
@@ -24,6 +24,12 @@
   }
 }
 
+.r-0 {
+  right: 0;
+}
+.l-0 {
+  left: 0;
+}
 .m-0 {
   margin: 0;
 }
@@ -45,12 +51,60 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.w-color {
+  color: white;
+}
 .plain-text {
-  color: #1e2e36;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.2;
+  @include media-breakpoint-up(xl) {
+    font-size: 14px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 18px;
+  }
 }
 .fw-700 {
   font-weight: 700;
+}
+.title-2 {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 36px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 48px;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 18px;
+    height: 100%;
+    background-color: $main-color;
+  }
+}
+.title-3 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline solid $main-color 3px;
+  text-underline-offset: 10px;
+  @include media-breakpoint-up(md) {
+    font-size: 28px;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: 22px;
+  }
+  @include media-breakpoint-up(xxl) {
+    font-size: 36px;
+  }
 }

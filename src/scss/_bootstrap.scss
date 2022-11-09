@@ -4,15 +4,16 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1400px,
-  xxl: 1950px,
+  xxl: 1880px,
 );
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1340px,
-  xxl: 1920px,
+  xxl: 1848px,
 );
+$main-color: #44c697;
 
 // @import '../../node_modules/bootstrap/scss/mixins/banner';
 

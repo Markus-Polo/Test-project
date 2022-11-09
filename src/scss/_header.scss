@@ -8,7 +8,7 @@
   padding: 5px 18px;
   border: none;
   border-radius: 3px;
-  background: #44c697;
+  background: $main-color;
   color: white;
   font-size: 12px;
   font-weight: 700;
@@ -95,7 +95,7 @@
     display: block;
     width: 3px;
     height: auto;
-    background: #44c697;
+    background: $main-color;
   }
 }
 .dropdown-tel__content {
@@ -115,7 +115,7 @@
   padding: 15px 8px;
   text-align: start;
   &:hover {
-    text-decoration: underline solid #44c697 3px;
+    text-decoration: underline solid $main-color 3px;
     text-underline-offset: 3px;
   }
 }
@@ -137,7 +137,7 @@
   text-transform: uppercase;
 }
 .header-nav__link:hover {
-  text-decoration: underline solid #44c697 3px;
+  text-decoration: underline solid $main-color 3px;
   text-underline-offset: 6px;
 }
 .header-cap-lower {
