@@ -32,49 +32,79 @@ section.pb-100
       ul.row.bed__list
         li.bed__item.col-lg-4
           a.bed__link(href='')
-            .attention-wrap
+            span.attention-wrap
               span.attention-text Новинка
-            img(src='./img/bed-1.jpg' alt='')
-            p.bed__content
-              span.bed__name Ліжко Рамона
-              span.bed__cost 8 999 грн
+            picture
+              source(srcet='./img/bed-1.webp 1x, ./img/bed-1-2x.webp 2x'
+                type='image/webp')
+              source(srcet='./img/bed-1.jpg 1x, ./img/bed-1-2x.jpg 2x'
+                type='image/jpeg')
+              img(src='./img/bed-1.jpg' alt='Ліжко Рамона')
+            span.bed__content
+              span.bed__info Ліжко Рамона
+              span.bed__info 8 999 грн
         li.bed__item.col-lg-4
           a.bed__link(href='')
-            .attention-wrap
+            span.attention-wrap
               span.attention-text Хіт продаж
-              span.attention-text.r-background.mt-5 Акція
-            img(src='./img/bed-2.jpg' alt='')
-            p.bed__content
-              span.bed__name Ліжко Честер
-              span.bed__cost 8 999 грн
+              span.attention-text.background-accent.mt-5 Акція
+            picture
+              source(srcet='./img/bed-2.webp 1x, ./img/bed-2-2x.webp 2x'
+                type='image/webp')
+              source(srcet='./img/bed-2.jpg 1x, ./img/bed-2-2x.jpg 2x'
+                type='image/jpeg')
+              img(src='./img/bed-2.jpg' alt='Ліжко Честер')
+            span.bed__content
+              span.bed__info Ліжко Честер
+              span.bed__info 8 999 грн
         li.bed__item.col-lg-4
           a.bed__link(href='')
-            img(src='./img/bed-3.jpg' alt='')
-            p.bed__content
-              span.bed__name Ліжко Венеція люкс
-              span.bed__cost 8 999 грн
+            picture
+              source(srcet='./img/bed-3.webp 1x, ./img/bed-3-2x.webp 2x'
+                type='image/webp')
+              source(srcet='./img/bed-3.jpg 1x, ./img/bed-3-2x.jpg 2x'
+                type='image/jpeg')
+              img(src='./img/bed-3.jpg' alt='Ліжко Венеція люкс')
+            span.bed__content
+              span.bed__info Ліжко Венеція люкс
+              span.bed__info 8 999 грн
         li.bed__item.col-lg-4
           a.bed__link(href='')
-            .attention-wrap
+            span.attention-wrap
               span.attention-text Новинка
-            img(src='./img/bed-4.jpg' alt='')
-            p.bed__content
-              span.bed__name Ліжко Імперія
-              span.bed__cost 8 999 грн
+            picture
+              source(srcet='./img/bed-4.webp 1x, ./img/bed-4-2x.webp 2x'
+                type='image/webp')
+              source(srcet='./img/bed-4.jpg 1x, ./img/bed-4-2x.jpg 2x'
+                type='image/jpeg')
+              img(src='./img/bed-4.jpg' alt='Ліжко Імперія')
+            span.bed__content
+              span.bed__info Ліжко Імперія
+              span.bed__info 8 999 грн
         li.bed__item.col-lg-4
           a.bed__link(href='')
-            img(src='./img/bed-5.jpg' alt='')
-            p.bed__content
-              span.bed__name Ліжко Адель
-              span.bed__cost 8 999 грн
+            picture
+              source(srcet='./img/bed-5.webp 1x, ./img/bed-5-2x.webp 2x'
+                type='image/webp')
+              source(srcet='./img/bed-5.jpg 1x, ./img/bed-5-2x.jpg 2x'
+                type='image/jpeg')
+              img(src='./img/bed-5.jpg' alt='Ліжко Адель')
+            span.bed__content
+              span.bed__info Ліжко Адель
+              span.bed__info 8 999 грн
         li.bed__item.col-lg-4
           a.bed__link(href='')
-            .attention-wrap
+            span.attention-wrap
               span.attention-text Хіт продаж
-              span.attention-text.r-background.mt-5 Акція
-            img(src='./img/bed-6.jpg' alt='')
-            p.bed__content
-              span.bed__name Ліжко Атлант
-              span.bed__cost 8 999 грн
-    .categories-button
+              span.attention-text.background-accent.mt-5 Акція
+            picture
+              source(srcet='./img/bed-6.webp 1x, ./img/bed-6-2x.webp 2x'
+                type='image/webp')
+              source(srcet='./img/bed-6.jpg 1x, ./img/bed-6-2x.jpg 2x'
+                type='image/jpeg')
+              img(src='./img/bed-6.jpg' alt='Ліжко Атлант')
+            span.bed__content
+              span.bed__info Ліжко Атлант
+              span.bed__info 8 999 грн
+    .d-flex.justify-center
       button.main-button В каталог

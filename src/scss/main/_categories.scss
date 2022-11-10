@@ -15,12 +15,14 @@
     font-size: 98px;
   }
   &:hover {
+    transition: 0.3s;
     color: $main-color;
-  }
-  &:hover .categories__text {
-    color: black;
-    text-decoration: underline solid $main-color 3px;
-    text-underline-offset: 10px;
+    .categories__text {
+      transition: 0.3s;
+      color: black;
+      text-decoration: underline solid $main-color 3px;
+      text-underline-offset: 10px;
+    }
   }
 }
 .categories__text {
@@ -47,6 +49,7 @@
 .bed__link {
   position: relative;
   &:hover .bed__content {
+    transition: 0.3s;
     background-color: $main-color;
     color: white;
   }
@@ -56,6 +59,7 @@
   position: absolute;
   left: 0;
   flex-direction: column;
+  align-items: flex-start;
   padding-top: 15px;
 }
 .attention-text {
@@ -70,8 +74,7 @@
   justify-content: space-between;
   padding: 15px;
 }
-.bed__name,
-.bed__cost {
+.bed__info {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -84,8 +87,4 @@
   @include media-breakpoint-up(xxl) {
     font-size: 24px;
   }
-}
-.categories-button {
-  display: flex;
-  justify-content: center;
 }

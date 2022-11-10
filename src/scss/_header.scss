@@ -115,6 +115,7 @@
   padding: 15px 8px;
   text-align: start;
   &:hover {
+    transition: 0.3s;
     text-decoration: underline solid $main-color 3px;
     text-underline-offset: 3px;
   }
@@ -135,10 +136,11 @@
 }
 .header-nav__link {
   text-transform: uppercase;
-}
-.header-nav__link:hover {
-  text-decoration: underline solid $main-color 3px;
-  text-underline-offset: 6px;
+  &:hover .header-nav__link-text {
+    transition: 0.3s;
+    text-decoration: underline solid $main-color 3px;
+    text-underline-offset: 6px;
+  }
 }
 .header-cap-lower {
   padding-top: 15px;
