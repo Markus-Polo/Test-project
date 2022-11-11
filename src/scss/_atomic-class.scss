@@ -3,7 +3,7 @@
     padding: #{$pd}px;
   }
 }
-@each $pt in (0, 5, 8, 15, 18, 100) {
+@each $pt in (0, 5, 8, 15, 18, 30, 100) {
   .pt-#{$pt} {
     padding-top: #{$pt}px;
   }
@@ -13,7 +13,7 @@
     padding-right: #{$pr}px;
   }
 }
-@each $pb in (10, 50, 100) {
+@each $pb in (10, 30, 50, 100) {
   .pb-#{$pb} {
     padding-bottom: #{$pb}px;
   }
@@ -35,6 +35,9 @@
 }
 .mt-5 {
   margin-top: 5px;
+}
+.mt-15 {
+  margin-top: 15px;
 }
 .d-flex {
   display: flex;
@@ -96,10 +99,8 @@
   }
 }
 .title-3 {
-  color: white;
   font-size: 22px;
   font-weight: 700;
-  text-decoration: underline solid $main-color 3px;
   text-underline-offset: 10px;
   @include media-breakpoint-up(md) {
     font-size: 28px;
@@ -111,6 +112,15 @@
     font-size: 36px;
   }
 }
+.text-underline {
+  text-decoration: underline solid $main-color 3px;
+}
 .background-accent {
-  background-color: red;
+  background-color: #ff1b1b;
+}
+.color-green {
+  color: $main-color;
+}
+.width-100 {
+  width: 100%;
 }
