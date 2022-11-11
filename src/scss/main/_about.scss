@@ -1,0 +1,35 @@
+.about {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  @include media-breakpoint-up(xl) {
+    justify-content: flex-end;
+  }
+}
+.about__content-holder {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    left: 0;
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: auto;
+    background: $main-color;
+  }
+}
+.about__text {
+  max-width: 790px;
+  padding: 50px;
+}
+.about__picture {
+  display: none;
+  @include media-breakpoint-up(xl) {
+    display: block;
+  }
+}
