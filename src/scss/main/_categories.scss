@@ -1,5 +1,14 @@
+.container-section {
+  padding-bottom: 50px;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 100px;
+  }
+}
 .categories {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 80px;
+  }
 }
 .categories__item {
   display: flex;

@@ -1,32 +1,33 @@
-.about-section {
-  padding-bottom: 50px;
-  @include media-breakpoint-up(xl) {
-    padding: 100px;
-  }
-}
-.about {
+.cta {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   @include media-breakpoint-up(xl) {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }
-.about__text {
+.cta__content {
   display: flex;
   flex-direction: column;
-  max-width: 790px;
+  align-items: center;
+  max-width: 512px;
   padding: 20px 40px;
-  border-right: 8px solid $main-color;
+  border-left: 8px solid $main-color;
   background-color: white;
   @include media-breakpoint-up(xl) {
-    position: absolute;
-    left: 0;
     padding: 50px;
   }
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    right: 0;
+  }
 }
-.about__picture {
+.cta__info {
+  width: 100%;
+  padding: 12px 10px;
+}
+.cta__picture {
   display: none;
   @include media-breakpoint-up(xl) {
     display: block;
